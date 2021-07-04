@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уборка квартир в Киеве</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="root">
+            <div class="nav">
+                <img class="logo" src="./images/Logo.png" alt="">
+                <div class="place-check">
+                    <div class="place-toggle">
+                        <div id="place-toggle-btn"></div>
+                        <button class="toggle-btn" type="button" onclick="home()"><span id="toggle-btn-text-home">Дом</span></button>
+                        <button class="toggle-btn toggle-btn-office" type="button" onclick="office()"><span id="toggle-btn-text-office">Офис</span></button>
+                    </div>
+                </div>
+                <div class="cleaning-types">
+                    <a href="">После ремонта</a>
+                    <a href="">Генеральная уборка</a>
+                    <a href="">Регулярная уборка</a>
+                    <a href="">Мойка окон</a>
+                </div>
+                <div class="contacts">
+                    <p>&#43;380 67 401 69 77</p>
+                    <p>&#448;</p>
+                    <p>24/7</p>
+                </div>
+                <img class="menu-btn" src="./images/menu.png" height="10" width="22" alt="">
+                <div class="hover-outline">
+                    <div id="order-btn">
+                        <span id="order-btn-text">Заказать уборку</span>
+                    </div>
+                </div>    
+            </div>
+            <div class="hero">
+                <img src="./images/cleaning_bedroom.png" alt="">
+                <div>
+                    <div class="hero-title">
+                        <h1>Уборка квартир в Киеве</h1>
+                        <p>Мы уберем у вас дома или в офисе. Наведем чистоту после ремонта и проведем генеральную уборку.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits">
+                <div>
+                    <div class="benefits-box _anim-items benefits-box1-transition">
+                        <h4>Тщательно отобранный персонал</h4>
+                        <img src="./images/woman1.png" alt="">
+                        <div class="benefits-overlay">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий, проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем сделать это эффективнее.</p>
+                        </div>
+                    </div>    
+                </div>
+                <div>
+                    <div class="benefits-box _anim-items benefits-box2-transition">
+                        <h4>Качественная эко-химия</h4>
+                        <img src="./images/bleach.png" alt="">
+                        <div class="benefits-overlay">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий, проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем сделать это эффективнее.</p>
+                        </div>
+                    </div>    
+                </div>
+                <div>
+                    <div class="benefits-box _anim-items benefits-box3-transition">
+                        <h4>Контролируем качество</h4>
+                        <img src="./images/woman2.png" alt="">
+                        <div class="benefits-overlay">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий, проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем сделать это эффективнее.</p>
+                        </div>
+                    </div>    
+                </div>
+                <div>
+                    <div class="benefits-box _anim-items benefits-box4-transition">
+                        <h4>Работаем круглосуточно</h4>
+                        <img src="./images/phone.png" alt="">
+                        <div class="benefits-overlay">
+                            <p>Не нужно тратить время, силы и ресурсы на разме- щение вакансий, проведе- ние собеседований, про- верку кандидатов на должность уборщицы. За счет больших объемов мы можем сделать это эффективнее.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="terms-of-service">
+                <div class="terms-of-service-title">
+                    <h2>Как мы убираем</h2>
+                    <p>Клинер приезжает в назначенное время со всем необходимым и сразу приступает к делу. Вам остаётся только оценить результат.</p>
+                </div>
+                <!-- <img src="./images/kitchen.png" alt=""> -->
+            </div>
+            <div class="room-tooltip">
+                <div class="room-tooltip-nav">
+                    <h6>Как мы убираем</h6>
+                    <div class="room-type">
+                        <button id="room-type-kitchen demo" onclick="currentImg(1)"><span class="room-pointer">&#8594;</span>Кухня</button>
+                        <button id="room-type-rooms demo" onclick="currentImg(2)"><span class="room-pointer">&#8594;</span>Комнаты</button>
+                        <button id="room-type-bathroom demo" onclick="currentImg(3)" onclick="showSpan()"><span class="room-pointer">&#8594;</span>Ванная</button>
+                        <button id="room-type-hallway demo" onclick="currentImg(4)"><span class="room-pointer">&#8594;</span>Прихожая</button>
+                    </div>
+                </div>
+                <div id="room-images">
+                    <img class="mySlides" src="./images/kitchen.png" alt="">
+                    <img class="mySlides" src="./images/rooms.png" alt="">
+                    <img class="mySlides" src="./images/bathroom.png" alt="">
+                    <img class="mySlides" src="./images/hallway.png" alt="">
+                    <div class="tooltip-btn">
+                        <img  src="./images/tooltip.png" alt="">
+                        <span class="tooltiptext">Чистим фасад вытяжки</span>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
